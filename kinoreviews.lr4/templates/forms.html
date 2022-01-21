@@ -1,0 +1,65 @@
+<div class="form-container" id="form_container">
+    <form id="loginForm" action="" class="auth-form login-form">
+        <div class="auth-form__title">Вход</div>
+        <ul class="auth-form__items">
+            <li class="auth-form__item">
+                <label for="loginForm_email" class="form-label">Логин</label>
+                <input class="form-input" name="email" type="email" id="loginForm_email"
+                    placeholder=" example@example.com" required>
+            </li>
+            <li class="auth-form__item">
+                <label for="loginForm_password" class="form-label">Пароль</label>
+                <input class="form-input" name="password" type="password" id="loginForm_password" required>
+            </li>
+            <li class="auth-form__item">
+                <div class="authForm_error" id="loginForm-error"></div>
+            </li>
+            <input type="submit" class="auth-form__submitBtn" value="Войти">
+            <div id="toggle_toSignupForm" class="auth-form__toggle-form">Регистрация</div>
+        </ul>
+        <div id="closeForm_button1" class="auth-form__close-form-button">X</div>
+    </form>
+    <form id="signupForm" action="" class="auth-form signup-form">
+        <div class="auth-form__title">Регистрация</div>
+        <ul class="auth-form__items">
+            <li class="auth-form__item">
+                <label for="signupForm_name" class="form-label">Имя</label>
+                <input class="form-input" name="name" type="text" id="signupForm_name" placeholder=" Иван" required
+                    pattern="[А-Яа-я\s-]*" title="Вводите имена на русском языке">
+            </li>
+            <li class="auth-form__item">
+                <label for="signupForm_phone" class="form-label">Телефон</label>
+                <input class="form-input" name="phone" type="text" id="signupForm_phone" placeholder=" 89005557788"
+                    required
+                    title="Введите телефон в формате 8**********, например 89007778899">
+            </li>
+            <li class="auth-form__item">
+                <label for="signupForm_email" class="form-label">Почта</label>
+                <input class="form-input" name="email" type="email" id="signupForm_email"
+                    placeholder=" example@example.com" required title="Введите email в формате xxx@xxx.xx">
+            </li>
+            <li class="auth-form__item">
+                <label for="signupForm_password" class="form-label">Пароль</label>
+                <input class="form-input" name="password" type="password" id="signupForm_password" required
+                    title="Минимум 6 символов. Обязательно наличие букв и цифр">
+            </li>
+            <li class="auth-form__item">
+                <label for="signupForm_passwordRepeat" class="form-label">Подтвердите пароль</label>
+                <input class="form-input" name="passwordRepeat" type="password" id="signupForm_passwordRepeat" required
+                    title="Пароли должны совпадать">
+            </li>
+            <li class="auth-form__item auth-form__item_checkbox">
+                <label for="signupForm_checkbox" class="form-label">Принять условия на обработку персональных
+                    данных</label>
+                <input class="form-input form-input_checkbox" name="checkbox" type="checkbox" id="signupForm_checkbox"
+                    required>
+            </li>
+            <li class="auth-form__item">
+                <div class="authForm_error" id="signupForm-error"></div>
+            </li>
+            <input type="submit" class="auth-form__submitBtn" value="Зарегистрироваться">
+            <div id="toggle_toLoginForm" class="auth-form__toggle-form">Авторизация</div>
+        </ul>
+        <div id="closeForm_button2" class="auth-form__close-form-button">X</div>
+    </form>
+</div>
